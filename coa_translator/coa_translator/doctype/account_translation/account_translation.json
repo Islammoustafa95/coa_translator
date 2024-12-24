@@ -1,0 +1,52 @@
+# coa_translator/coa_translator/doctype/account_translation/account_translation.json
+{
+    "name": "Account Translation",
+    "owner": "Administrator",
+    "doctype": "DocType",
+    "module": "COA Translator",
+    "custom": 1,
+    "fields": [
+        {
+            "fieldname": "section_progress",
+            "fieldtype": "Section Break",
+            "label": "Translation Progress"
+        },
+        {
+            "fieldname": "progress_bar",
+            "fieldtype": "Percent",
+            "label": "Progress",
+            "read_only": 1
+        },
+        {
+            "fieldname": "section_actions",
+            "fieldtype": "Section Break",
+            "label": "Actions"
+        },
+        {
+            "fieldname": "fetch_accounts",
+            "fieldtype": "Button",
+            "label": "Fetch Accounts"
+        },
+        {
+            "fieldname": "translate_accounts",
+            "fieldtype": "Button",
+            "label": "Auto Translate"
+        },
+        {
+            "fieldname": "save_translations",
+            "fieldtype": "Button",
+            "label": "Save Translations"
+        },
+        {
+            "fieldname": "section_translations",
+            "fieldtype": "Section Break",
+            "label": "Translations"
+        },
+        {
+            "fieldname": "translations",
+            "fieldtype": "Table",
+            "label": "Account Translations",
+            "options": "Account Translation Detail"
+        }
+    ]
+}
