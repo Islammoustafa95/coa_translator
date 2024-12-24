@@ -1,10 +1,18 @@
-# coa_translator/coa_translator/doctype/account_translation/account_translation.json
 {
-    "name": "Account Translation",
-    "owner": "Administrator",
+    "autoname": "hash",
+    "creation": "2024-01-01 12:00:00.000000",
     "doctype": "DocType",
-    "module": "COA Translator",
-    "custom": 1,
+    "engine": "InnoDB",
+    "field_order": [
+        "section_progress",
+        "progress_bar",
+        "section_actions",
+        "fetch_accounts",
+        "translate_accounts",
+        "save_translations",
+        "section_translations",
+        "translations"
+    ],
     "fields": [
         {
             "fieldname": "section_progress",
@@ -48,5 +56,28 @@
             "label": "Account Translations",
             "options": "Account Translation Detail"
         }
-    ]
+    ],
+    "modified": "2024-01-01 12:00:00.000000",
+    "modified_by": "Administrator",
+    "module": "COA Translator",
+    "name": "Account Translation",
+    "name_case": "",
+    "owner": "Administrator",
+    "permissions": [
+        {
+            "create": 1,
+            "delete": 1,
+            "email": 1,
+            "export": 1,
+            "print": 1,
+            "read": 1,
+            "report": 1,
+            "role": "System Manager",
+            "share": 1,
+            "write": 1
+        }
+    ],
+    "sort_field": "modified",
+    "sort_order": "DESC",
+    "track_changes": 1
 }
